@@ -1,0 +1,22 @@
+:root {
+  --primary-color: #326ab4;
+  --color-black: #000;
+  --color-white: #fff;
+  --text-secondary: #707070;
+  --text-secondary-2: #bcbcbc;
+  --color-dot: #e2dfdf;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+.loading {
+  text-align: center;
+}

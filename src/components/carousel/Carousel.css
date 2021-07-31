@@ -1,0 +1,116 @@
+  .carousel {
+    margin: 2rem 1rem;
+  }
+
+  .carousel__items {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 1rem;
+    overflow: hidden;
+    width: 150%;
+  }
+
+  .carousel__items .card {
+    list-style: none;
+    width: 80%;
+  }
+
+  .carousel__items .card.slide-right {
+    animation: slideRight .5s ease-in;
+  }
+
+  .carousel__items .card.slide-left {
+    animation: slideLeft .5s ease-in;
+  }
+
+  .carousel__controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+
+  .carousel__controls>button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+  }
+
+  .carousel__controls>button.carousel__controls-prev {
+    transform: rotate(180deg);
+  }
+
+  .carousel__controls>button:disabled svg>* {
+    stroke: var(--text-secondary-2);
+  }
+
+  .carousel__controls-mobile {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel__controls-mobile .dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  .carousel__items-offset {
+    margin-left: -50%;
+  }
+
+  .dot {
+    width: .7rem;
+    height: .7rem;
+    border-radius: 50%;
+    background-color: var(--color-dot);
+    margin: 0 .4rem;
+    border: 0;
+  }
+
+  .dot.active {
+    background-color: var(--color-black);
+  }
+
+  @media screen and (min-width:768px) {
+    .carousel__items {
+      width: 100%;
+    }
+
+    .carousel__items .card {
+      width: 23%;
+    }
+
+  }
+
+  @keyframes slideLeft {
+    from {
+      transform: translateX(150%);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideRight {
+    from {
+      transform: translateX(-150%);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }

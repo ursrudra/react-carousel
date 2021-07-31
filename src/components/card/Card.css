@@ -1,0 +1,64 @@
+.card header {
+    padding: 1rem 0;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: .5rem 0;
+    line-height: 1.8;
+}
+
+@media screen and (min-width:768px) {
+    .title-container {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+h6 {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-right: .5rem;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.card img {
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 600;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+
+footer a svg {
+    width: .8em;
+    height: .8em;
+    margin: auto;
+    margin-left: .8rem;
+}
